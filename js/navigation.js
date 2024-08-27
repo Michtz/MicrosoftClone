@@ -24,7 +24,7 @@ const navItems = [
 
 const additionalNavItems = [
   {
-    onclick: 'showDropdown(0)',
+    onclick: 'showDropdown',
     title: 'Alles von Microsoft',
     icon: 'keyboard_arrow_down',
   },
@@ -206,6 +206,15 @@ const addAllFromMicrosoftDropdown = () => {
   });
 
   header.appendChild(outerUl);
+};
+
+const showDropdown = () => {
+  const dropdown = document.querySelector('.container-dropdown');
+  const button = document.querySelector('button');
+
+  button.onclick = () => {
+    dropdown.setAttribute('data-visible', 'true');
+  };
 };
 
 addLogo();
