@@ -1,0 +1,25 @@
+# Node.js dependencies
+node_modules/
+
+# Log-Dateien
+*.log
+
+# Build-Artefakte
+dist/
+build/
+
+# temporäre Dateien
+*.tmp
+*.swp
+
+# IDE-spezifische Dateien
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# MacOS spezifische Dateien
+.DS_Store
+
+# Windows spezifische Dateien
+Thumbs.db
