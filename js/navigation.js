@@ -178,6 +178,7 @@ const addAdditionalItems = () => {
  * Function to add all dropdown elements from the navItemsDropdownContent array
  *
  * */
+
 const addAllFromMicrosoftDropdown = () => {
   const header = document.querySelector('header');
   const outerUl = document.createElement('ul');
