@@ -1,3 +1,10 @@
+.card-container {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 80px;
+}
+
 .card {
   display: flex;
   flex-wrap: wrap;
@@ -29,5 +36,9 @@ img {
     padding: 4.5px 12px;
 
     background-color: #ffb900;
+  }
+  button {
+    position: relative;
+    bottom: 20px;
   }
 }
