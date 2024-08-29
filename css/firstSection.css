@@ -1,42 +1,3 @@
-/*
-body,
-html {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-.slider-container {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-
-  .slide {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 48px;
-    color: white;
-    transition: transform 1s ease-in-out;
-  }
-}
-
-#slideA {
-  background-image: url('../assets/microsoftSale.png');
-  background-repeat: no-repeat;
-  transform: translateX(0);
-}
-#slideB {
-  background-image: url('../assets/surfacePro.png');
-  background-repeat: no-repeat;
-  transform: translateX(100%);
-}*/
-
 .slide {
   position: absolute;
   width: 100%;
@@ -46,12 +7,18 @@ html {
 
   &[data-slide='true'] {
     animation: slideIn 0.8s ease-in forwards;
-    /*    animation-delay: 5s;*/
   }
 
   &[data-slide='false'] {
     animation: slideOut 0.8s ease-in forwards;
-    /*animation-delay: 5s;*/
+  }
+
+  &[data-slide-back='true'] {
+    animation: slideBackOut 0.8s ease-in forwards;
+  }
+
+  &[data-slide-back='false'] {
+    animation: slideBackIn 0.8s ease-in forwards;
   }
 
   img {
@@ -70,20 +37,18 @@ html {
 
   &[data-slide='true'] {
     animation: slideOut 0.8s ease-in forwards;
-    /*  animation-delay: 5s;*/
-  }
-
-  // das hier ist alt+++++++++++++++++++
-  ++++++++++++++++++++++++++++++++++++++++++++++++
-  ++++++++++++++++++
-  &[data-slide-back='true'] {
-    animation: slideBackOut 0.8s ease-in forwards;
-    /*animation-delay: 5s;*/
   }
 
   &[data-slide='false'] {
     animation: slideIn 0.8s ease-in forwards;
-    /*animation-delay: 5s;*/
+  }
+
+  &[data-slide-back='true'] {
+    animation: slideBackIn 0.8s ease-in forwards;
+  }
+
+  &[data-slide-back='false'] {
+    animation: slideBackOut 0.8s ease-in forwards;
   }
 
   img {
@@ -112,6 +77,16 @@ html {
   }
 }
 
+@keyframes slideBackIn {
+  0% {
+    right: 100%;
+  }
+
+  100% {
+    right: 0;
+  }
+}
+
 @keyframes slideBackOut {
   0% {
     right: 0;
@@ -124,4 +99,15 @@ html {
 
 .controls {
   position: relative;
+  bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.material-icons {
+  font-size: 2rem;
+  color: black;
+  cursor: pointer;
+  border: none;
+  background: none;
 }

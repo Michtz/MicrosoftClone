@@ -9,11 +9,11 @@ header {
     height: 23px;
     white-space: nowrap;
   }
-}
 
-img {
-  width: 108px;
-  height: 23px;
+  img {
+    width: 108px;
+    height: 23px;
+  }
 }
 
 nav ul {
