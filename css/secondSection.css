@@ -1,0 +1,19 @@
+.link-list {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  max-width: 1300px;
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #0067b8;
+    font-weight: 600 !important;
+  }
+
+  img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0.7rem;
+  }
+}
