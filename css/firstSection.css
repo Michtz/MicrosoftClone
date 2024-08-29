@@ -1,8 +1,10 @@
 .slider-container {
   height: 620px;
+  overflow: hidden;
 }
 
 .slide {
+  overflow: hidden;
   position: absolute;
   width: 100%;
   height: auto;
@@ -33,6 +35,7 @@
 }
 
 .defaultSlide {
+  overflow: hidden;
   position: absolute;
   width: 100%;
   height: auto;
@@ -123,15 +126,11 @@
   p {
     font-size: 1rem;
     width: 470px;
+    margin: 0;
+    margin-bottom: 5px;
   }
 
   button {
-    background-color: #2b65b2;
-    border: none;
-    padding: 10px 12px;
-    margin: 8px 0px;
-    border-radius: 0.125rem;
-
     a {
       color: white;
       text-decoration: none;
