@@ -1,3 +1,8 @@
+/*
+ *  Navigation
+ * Michael Venetz 2024
+ * */
+// Todo: refactor
 const navItems = [
   {
     href: 'https://www.microsoft.com/de-ch/microsoft-teams/group-chat-software',
@@ -128,10 +133,6 @@ const addLogo = () => {
   header.insertBefore(a, header.firstChild);
 };
 
-/*
- * Function to add all navigation items from the navItems array
- */
-
 const addNavigationItems = () => {
   const nav = document.querySelector('nav');
   const ul = document.createElement('ul');
@@ -147,6 +148,88 @@ const addNavigationItems = () => {
   });
 
   nav.appendChild(ul);
+
+  /*
+  *
+// Funktionen zum Erstellen der Navigationselemente
+const createLogo = () => {
+  const a = createElement('a', { href: 'https://www.microsoft.com/de-ch' });
+  const logo = createElement('img', {
+    src: 'https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31',
+    alt: 'Microsoft Logo'
+  });
+  a.appendChild(logo);
+  return a;
+};
+
+const createNavItems = () => {
+  const ul = createElement('ul');
+  navItems.forEach(item => {
+    const li = createElement('li');
+    const a = createElement('a', { href: item.href, textContent: item.text });
+    li.appendChild(a);
+    ul.appendChild(li);
+  });
+  return ul;
+};
+
+const createAdditionalItems = () => {
+  const div = createElement('div', { className: 'additional-nav-items-container' });
+  additionalNavItems.forEach(item => {
+    const button = createElement('button', {
+      textContent: item.title,
+      onclick: typeof item.onclick === 'string' ? () => window.location.href = item.onclick : item.onclick
+    });
+    const icon = createElement('i', { className: 'material-icons', textContent: item.icon });
+    button.appendChild(icon);
+    div.appendChild(button);
+  });
+  return div;
+};
+
+const createDropdownContent = () => {
+  const outerUl = createElement('ul', { className: 'container-dropdown' });
+  navItemsDropdownContent.forEach(item => {
+    const container = createElement('li', { className: 'section' });
+    const span = createElement('span', { textContent: item.text });
+    const ul = createElement('ul');
+    item.content.forEach(subItem => {
+      const li = createElement('li');
+      const a = createElement('a', { href: subItem.href, textContent: subItem.text });
+      li.appendChild(a);
+      ul.appendChild(li);
+    });
+    container.append(span, ul);
+    outerUl.appendChild(container);
+  });
+  return outerUl;
+};
+
+// Hauptfunktion zum Aufbau der Navigation
+const buildNavigation = () => {
+  const header = document.querySelector('header');
+  header.appendChild(createLogo());
+
+  const nav = createElement('nav');
+  nav.appendChild(createNavItems());
+  header.appendChild(nav);
+
+  header.appendChild(createAdditionalItems());
+  header.appendChild(createDropdownContent());
+};
+
+// Hilfsfunktionen (müssen separat definiert werden)
+function showDropdown() {
+  const dropdown = document.querySelector('.container-dropdown');
+  dropdown.setAttribute('data-visible', 'true');
+}
+
+function openSearch() {
+  // Implementierung der Suchfunktion
+}
+
+// Ausführung
+buildNavigation();*/
 };
 
 /*

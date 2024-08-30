@@ -1,35 +1,7 @@
-const main = document.querySelector('main');
-const cardContainer = document.createElement('div');
-cardContainer.className = 'card-container';
-
-const addCard = (card) => {
-  const cardElement = document.createElement('div');
-  const cardImage = document.createElement('img');
-  const contentContainer = document.createElement('div');
-  const cardLabel = document.createElement('span');
-  const cardTitle = document.createElement('h2');
-  const cardText = document.createElement('p');
-  const cardButton = document.createElement('button');
-
-  cardImage.src = card.image;
-  contentContainer.className = 'content-container';
-  if (card.label) cardLabel.textContent = card.label;
-  cardTitle.textContent = card.title;
-  cardText.textContent = card.text;
-  cardButton.textContent = card.buttonText;
-
-  contentContainer.appendChild(cardLabel);
-  contentContainer.appendChild(cardTitle);
-  contentContainer.appendChild(cardText);
-  contentContainer.appendChild(cardButton);
-
-  cardElement.appendChild(cardImage);
-  cardElement.appendChild(contentContainer);
-
-  cardElement.className = 'card';
-
-  return cardElement;
-};
+/*
+ *  Card Section
+ * Michael Venetz 2024
+ * */
 
 const cards = [
   {
@@ -62,7 +34,37 @@ const cards = [
   },
 ];
 
-cards.forEach((card) => {
-  cardContainer.appendChild(addCard(card));
-});
-main.appendChild(cardContainer);
+const createCardElement = ({ label, title, text, buttonText, image }) => {
+  const cardElement = createElement('div', { className: 'card' });
+  const cardImage = createElement('img', { src: image });
+  const contentContainer = createElement('div', {
+    className: 'content-container',
+  });
+
+  if (label) {
+    const cardLabel = createElement('span', {
+      textContent: label,
+      dataset: { color: 'yellow' },
+    });
+    contentContainer.appendChild(cardLabel);
+  }
+
+  const cardTitle = createElement('h2', { textContent: title });
+  const cardText = createElement('p', { textContent: text });
+  const cardButton = createElement('button', { textContent: buttonText });
+
+  contentContainer.append(cardTitle, cardText, cardButton);
+  cardElement.append(cardImage, contentContainer);
+
+  return cardElement;
+};
+
+const renderCards = (cardsData) => {
+  const cardContainer = createElement('div', { className: 'card-container' });
+
+  const cardElements = cardsData.map(createCardElement);
+  cardContainer.append(...cardElements);
+  return cardContainer;
+};
+
+main.appendChild(renderCards(cards));

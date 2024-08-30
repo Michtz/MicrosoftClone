@@ -35,7 +35,9 @@ img {
     color: black;
     padding: 4.5px 12px;
 
-    background-color: #ffb900;
+    &[data-color='yellow'] {
+      background-color: #ffb900;
+    }
   }
   button {
     position: relative;
