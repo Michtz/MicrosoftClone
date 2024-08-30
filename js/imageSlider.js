@@ -45,7 +45,6 @@ const sectionB = createSlide(
 );
 
 sliderContainer.append(sectionA, sectionB);
-main.appendChild(sliderContainer);
 
 const slideActions = {
   slideLeft: () => {

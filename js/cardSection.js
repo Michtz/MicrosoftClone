@@ -1,5 +1,5 @@
 /*
- *  Card Section
+ *  Card Section 1
  * Michael Venetz 2024
  * */
 
@@ -34,37 +34,37 @@ const cards = [
   },
 ];
 
-const createCardElement = ({ label, title, text, buttonText, image }) => {
-  const cardElement = createElement('div', { className: 'card' });
-  const cardImage = createElement('img', { src: image });
-  const contentContainer = createElement('div', {
-    className: 'content-container',
-  });
-
-  if (label) {
-    const cardLabel = createElement('span', {
-      textContent: label,
-      dataset: { color: 'yellow' },
-    });
-    contentContainer.appendChild(cardLabel);
-  }
-
-  const cardTitle = createElement('h2', { textContent: title });
-  const cardText = createElement('p', { textContent: text });
-  const cardButton = createElement('button', { textContent: buttonText });
-
-  contentContainer.append(cardTitle, cardText, cardButton);
-  cardElement.append(cardImage, contentContainer);
-
-  return cardElement;
-};
-
-const renderCards = (cardsData) => {
-  const cardContainer = createElement('div', { className: 'card-container' });
-
-  const cardElements = cardsData.map(createCardElement);
-  cardContainer.append(...cardElements);
-  return cardContainer;
-};
-
-main.appendChild(renderCards(cards));
+const cards2 = [
+  {
+    label: 'Neu',
+    title: 'Copilot+ PCs for Business',
+    text: 'Surface Pro for Business und Surface Laptop for Business schalten neue KI-beschleunigte Funktionen wie Windows-Studioeffekte frei.',
+    buttonText: 'Surface Pro for Business vorbestellen',
+    image: 'assets/cardImg5.png',
+    additionalLinkText: 'Alle Surface for Business-Produkte anzeigen',
+  },
+  {
+    label: undefined,
+    title: 'Microsoft Teams für Ihr Unternehmen',
+    text: 'Onlinebesprechungen, Chat, Zusammenarbeit in Echtzeit und gemeinsam genutzter Cloud-Speicher – alles an einem Ort.',
+    buttonText: 'Jetzt vorbestellen',
+    image: 'assets/cardImg6.png',
+    additionalLinkText: undefined,
+  },
+  {
+    label: undefined,
+    title: 'Copilot für Microsoft 365',
+    text: 'Sparen Sie Zeit und konzentrieren Sie sich auf die Dinge, die am wichtigsten sind – mit KI in Microsoft 365 for Business.',
+    buttonText: 'Weitere Informationen',
+    image: 'assets/cardImg7.png',
+    additionalLinkText: undefined,
+  },
+  {
+    label: undefined,
+    title: 'Visual Studio 2022',
+    text: 'Profitieren Sie von der leistungsfähigsten IDE für .NET- und C++-Entwickler unter Windows, um Web-, Cloud-, Desktop- und mobile Anwendungen, Dienste und Spiele zu erstellen.',
+    buttonText: 'Visual Studio 2022 herunterladen',
+    image: 'assets/cardImg8.png',
+    additionalLinkText: undefined,
+  },
+];

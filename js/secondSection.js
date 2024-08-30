@@ -53,4 +53,3 @@ items.forEach((item) => {
 });
 
 linkListContainer.appendChild(section);
-main.appendChild(linkListContainer);

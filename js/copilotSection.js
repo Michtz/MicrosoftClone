@@ -27,4 +27,3 @@ const createCopilotSection = ({ header, text, buttonText, imageSrc }) => {
 };
 
 const copilotSection = createCopilotSection(copilotData);
-main.appendChild(copilotSection);
