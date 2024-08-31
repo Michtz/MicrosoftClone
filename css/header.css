@@ -15,6 +15,11 @@ header {
     height: 23px;
   }
 
+  nav {
+    display: flex;
+    align-items: center;
+  }
+
   nav ul {
     display: flex;
     justify-content: center;

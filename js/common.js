@@ -13,7 +13,6 @@ const createElement = (tag, props = {}) => {
 };
 
 const main = document.querySelector('main');
-const footer = document.querySelector('footer');
 
 /* Card JS */
 
@@ -88,4 +87,9 @@ const createElementsFromObjects = (objectsArray) => {
   };
 
   return objectsArray.map(createSingleElement);
+};
+
+const addContent = ({ data, location }) => {
+  const elements = createElementsFromObjects(data);
+  elements.forEach((el) => location.appendChild(el));
 };
