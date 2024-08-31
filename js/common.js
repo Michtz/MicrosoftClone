@@ -1,17 +1,3 @@
-const createElement = (tag, props = {}) => {
-  const element = document.createElement(tag);
-  Object.entries(props).forEach(([key, value]) => {
-    if (key === 'textContent') {
-      element.textContent = value;
-    } else if (key === 'children') {
-      value.forEach((child) => element.appendChild(child));
-    } else {
-      element[key] = value;
-    }
-  });
-  return element;
-};
-
 /* neui test funktion um alles z z ersteue und s html als json chönne z übergäh
  * nur e idee */
 
