@@ -23,3 +23,6 @@ build/
 
 # Windows spezifische Dateien
 Thumbs.db
+
+# trash
+!/js/trash.js

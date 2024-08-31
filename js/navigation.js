@@ -53,75 +53,6 @@ const additionalNavItems = [
   },
 ];
 
-const navItemsDropdownContent = [
-  {
-    text: 'Software',
-    content: [
-      { href: '#', text: 'Windows-Apps' },
-      { href: '#', text: 'KI' },
-      { href: '#', text: 'OneDrive' },
-      { href: '#', text: 'Outlook' },
-      { href: '#', text: 'Skype' },
-      { href: '#', text: 'OneNote' },
-      { href: '#', text: 'Microsoft Teams' },
-    ],
-  },
-
-  {
-    text: 'PCs und Geräte',
-    content: [
-      { href: '#', text: 'Xbox kaufen' },
-      { href: '#', text: 'Zubehör' },
-    ],
-  },
-  {
-    text: 'Unterhaltung',
-    content: [
-      { href: '#', text: 'Xbox Game Pass Ultimate' },
-      { href: '#', text: 'Xbox-Spiele' },
-      { href: '#', text: 'PC-Spiele' },
-      { href: '#', text: 'Windows-Spiele' },
-      { href: '#', text: 'Filme & TV' },
-    ],
-  },
-
-  {
-    text: 'Unternehmen',
-    content: [
-      { href: '#', text: 'Microsoft Cloud' },
-      { href: '#', text: 'Microsoft Security' },
-      { href: '#', text: 'Azure' },
-      { href: '#', text: 'Dynamics 365' },
-      { href: '#', text: 'Microsoft 365 for Business' },
-      { href: '#', text: 'Microsoft Branchen' },
-      { href: '#', text: 'Microsoft Power Platform' },
-      { href: '#', text: 'Windows 365' },
-    ],
-  },
-  {
-    text: 'Entwickler & IT',
-    content: [
-      { href: '#', text: 'Developer Center' },
-      { href: '#', text: 'Dokumentation' },
-      { href: '#', text: 'Microsoft Learn' },
-      { href: '#', text: 'Microsoft Tech Community' },
-      { href: '#', text: 'Azure Marketplace' },
-      { href: '#', text: 'AppSource' },
-      { href: '#', text: 'Visual Studio' },
-    ],
-  },
-
-  {
-    text: 'Mehr',
-    content: [
-      { href: '#', text: 'Download Center' },
-      { href: '#', text: 'Bildungswesen' },
-      { href: '#', text: 'Geschenkkarten' },
-      { href: '#', text: 'Lizenzierung' },
-    ],
-  },
-];
-
 const header = document.querySelector('header');
 const nav = document.querySelector('nav');
 
@@ -172,40 +103,6 @@ const addAdditionalItems = () => {
   header.appendChild(div);
 };
 
-/*
- * Function to add all dropdown elements from the navItemsDropdownContent array
- *
- * */
-
-const addAllFromMicrosoftDropdown = () => {
-  const outerUl = document.createElement('ul');
-  outerUl.className = 'container-dropdown';
-
-  navItemsDropdownContent.forEach((item) => {
-    const container = document.createElement('li');
-    container.className = 'section';
-
-    const span = document.createElement('span');
-    span.textContent = item.text;
-
-    const ul = document.createElement('ul');
-    item.content.forEach((subItem) => {
-      const li = document.createElement('li');
-      const a = document.createElement('a');
-      a.href = subItem.href;
-      a.textContent = subItem.text;
-      li.appendChild(a);
-      ul.appendChild(li);
-    });
-
-    container.appendChild(span);
-    container.appendChild(ul);
-    outerUl.appendChild(container);
-  });
-
-  header.appendChild(outerUl);
-};
-
 const showDropdown = () => {
   const dropdown = document.querySelector('.container-dropdown');
   const button = document.querySelector('button');
@@ -216,4 +113,20 @@ const showDropdown = () => {
 };
 
 addAdditionalItems();
-addAllFromMicrosoftDropdown();
+
+/*
+ * function to initialize dropdown in header
+ *
+ * */
+
+const addDropdownToHeader = (data) => {
+  const header = document.querySelector('header');
+  const dropdownContainer = createElement('ul', {
+    className: 'container-dropdown',
+  });
+  const elements = createElementsFromObjects(data);
+  elements.forEach((el) => dropdownContainer.appendChild(el));
+  header.appendChild(dropdownContainer);
+};
+
+addDropdownToHeader(navDropdownData);
