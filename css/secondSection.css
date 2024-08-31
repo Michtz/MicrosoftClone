@@ -5,7 +5,7 @@
   max-width: 1300px;
   a {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     color: #0067b8;
     font-weight: 600 !important;
