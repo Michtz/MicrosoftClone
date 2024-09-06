@@ -1,14 +1,18 @@
 .link-list {
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: auto;
   max-width: 1300px;
+  width: 90%;
   a {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     color: #0067b8;
     font-weight: 600 !important;
+    margin: 16px 24px;
+    white-space: nowrap;
   }
 
   img {
