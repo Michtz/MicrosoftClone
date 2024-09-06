@@ -14,8 +14,6 @@ const createElementsFromObjects = (objectsArray) => {
         Object.assign(element.style, value);
       } else if (key === 'dataset' && typeof value === 'object') {
         Object.assign(element.dataset, value);
-      } else if (key === 'onClick' && typeof value === 'function') {
-        element.addEventListener('click', value);
       } else if (typeof value === 'object') {
         element[key] = value;
       } else {
