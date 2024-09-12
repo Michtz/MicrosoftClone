@@ -34,11 +34,11 @@ const cardsOneData = [
                 textContent:
                   'Nutzen Sie mit diesem aussergewöhnlich leistungsstarken Notebook KI-Funktionen wie Live Captions und Cocreator.',
               },
-              {
-                tagName: 'button',
-                textContent: 'Jetzt Kaufen',
-              },
             ],
+          },
+          {
+            tagName: 'button',
+            textContent: 'Jetzt Kaufen',
           },
         ],
       },
@@ -68,11 +68,11 @@ const cardsOneData = [
                 textContent:
                   'Die leistungsfähigste Xbox aller Zeiten mit der höchsten Bildfrequenz und blitzschnellen Ladezeiten ist bald mit einer 2 TB SSD in der Sonderedition Galaxy Black erhältlich.',
               },
-              {
-                tagName: 'button',
-                textContent: 'Jetzt vorbestellen',
-              },
             ],
+          },
+          {
+            tagName: 'button',
+            textContent: 'Jetzt vorbestellen',
           },
         ],
       },
@@ -102,11 +102,11 @@ const cardsOneData = [
                 textContent:
                   'Bestelle jetzt die Xbox Series S mit 1 TB Speicherplatz in der eleganten Farbe Robot White mit 1 TB Speicherplatz zum besten Preis.',
               },
-              {
-                tagName: 'button',
-                textContent: 'Jetzt vorbestellen',
-              },
             ],
+          },
+          {
+            tagName: 'button',
+            textContent: 'Jetzt vorbestellen',
           },
         ],
       },
@@ -131,11 +131,11 @@ const cardsOneData = [
                 textContent:
                   'Elite, kabellos und anpassungsfähig – finde den Controller für deinen Stil.',
               },
-              {
-                tagName: 'button',
-                textContent: 'Jetzt Kaufen',
-              },
             ],
+          },
+          {
+            tagName: 'button',
+            textContent: 'Jetzt Kaufen',
           },
         ],
       },
