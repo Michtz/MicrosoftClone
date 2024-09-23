@@ -2,17 +2,22 @@
   display: flex;
   gap: 1.5rem;
   width: 90%;
+
   margin: auto;
   justify-content: center;
   margin-top: 80px;
   align-items: stretch;
+
+  button {
+    margin: 16px 24px;
+  }
 }
 
 .card {
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
-  align-content: flex-start;
+
   gap: 1rem;
   width: 322px;
   height: auto;
@@ -49,11 +54,10 @@ img {
     font-weight: 600;
     color: black;
     padding: 4.5px 12px;
+    height: auto;
 
     &[data-color='yellow'] {
       background-color: #ffb900;
     }
-  }
-  button {
   }
 }

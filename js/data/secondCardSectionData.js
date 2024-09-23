@@ -13,8 +13,14 @@ const cardsOneData = [
         className: 'card',
         children: [
           {
-            tagName: 'img',
-            src: 'assets/cardImg3.png',
+            tagName: 'div',
+            className: 'image-container',
+            children: [
+              {
+                tagName: 'img',
+                src: 'assets/cardImg3.png',
+              },
+            ],
           },
           {
             tagName: 'div',
@@ -47,8 +53,14 @@ const cardsOneData = [
         className: 'card',
         children: [
           {
-            tagName: 'img',
-            src: 'assets/cardImg1.png',
+            tagName: 'div',
+            className: 'image-container',
+            children: [
+              {
+                tagName: 'img',
+                src: 'assets/cardImg1.png',
+              },
+            ],
           },
           {
             tagName: 'div',
@@ -81,8 +93,14 @@ const cardsOneData = [
         className: 'card',
         children: [
           {
-            tagName: 'img',
-            src: 'assets/cardImg2.png',
+            tagName: 'div',
+            className: 'image-container',
+            children: [
+              {
+                tagName: 'img',
+                src: 'assets/cardImg2.png',
+              },
+            ],
           },
           {
             tagName: 'div',
@@ -115,8 +133,14 @@ const cardsOneData = [
         className: 'card',
         children: [
           {
-            tagName: 'img',
-            src: 'assets/cardImg4.png',
+            tagName: 'div',
+            className: 'image-container',
+            children: [
+              {
+                tagName: 'img',
+                src: 'assets/cardImg4.png',
+              },
+            ],
           },
           {
             tagName: 'div',
