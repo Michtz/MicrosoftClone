@@ -43,8 +43,14 @@ const cardsOneData = [
             ],
           },
           {
-            tagName: 'button',
-            textContent: 'Jetzt Kaufen',
+            tagName: 'div',
+            className: 'button-container',
+            children: [
+              {
+                tagName: 'button',
+                textContent: 'Jetzt Kaufen',
+              },
+            ],
           },
         ],
       },
@@ -83,8 +89,14 @@ const cardsOneData = [
             ],
           },
           {
-            tagName: 'button',
-            textContent: 'Jetzt vorbestellen',
+            tagName: 'div',
+            className: 'button-container',
+            children: [
+              {
+                tagName: 'button',
+                textContent: 'Jetzt vorbestellen',
+              },
+            ],
           },
         ],
       },
@@ -123,8 +135,14 @@ const cardsOneData = [
             ],
           },
           {
-            tagName: 'button',
-            textContent: 'Jetzt vorbestellen',
+            tagName: 'div',
+            className: 'button-container',
+            children: [
+              {
+                tagName: 'button',
+                textContent: 'Jetzt vorbestellen',
+              },
+            ],
           },
         ],
       },
@@ -158,8 +176,14 @@ const cardsOneData = [
             ],
           },
           {
-            tagName: 'button',
-            textContent: 'Jetzt Kaufen',
+            tagName: 'div',
+            className: 'button-container',
+            children: [
+              {
+                tagName: 'button',
+                textContent: 'Jetzt Kaufen',
+              },
+            ],
           },
         ],
       },

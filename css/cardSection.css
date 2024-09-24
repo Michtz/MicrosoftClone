@@ -7,10 +7,6 @@
   justify-content: center;
   margin-top: 80px;
   align-items: stretch;
-
-  button {
-    margin: 16px 24px;
-  }
 }
 
 .card {
@@ -59,5 +55,17 @@ img {
     &[data-color='yellow'] {
       background-color: #ffb900;
     }
+  }
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 16px 24px;
+
+  button {
+    font-size: 1rem;
+    font-weight: 400;
   }
 }
