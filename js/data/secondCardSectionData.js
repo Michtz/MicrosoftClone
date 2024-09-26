@@ -201,8 +201,14 @@ const cardsTwoData = [
         className: 'card',
         children: [
           {
-            tagName: 'img',
-            src: 'assets/cardImg5.png',
+            tagName: 'div',
+            className: 'image-container',
+            children: [
+              {
+                tagName: 'img',
+                src: 'assets/cardImg5.png',
+              },
+            ],
           },
           {
             tagName: 'div',
@@ -220,12 +226,24 @@ const cardsTwoData = [
               {
                 tagName: 'p',
                 textContent:
-                  'Surface Pro for Business und Surface Laptop for Business schalten neue KI-beschleunigte Funktionen wie Windows-Studioeffekte frei.',
+                  'Business schaltet neue KI-beschleunigte Funktionen wie Windows-Studioeffekte frei, überall wo Sie es benötigen.',
               },
+            ],
+          },
+          {
+            tagName: 'div',
+            className: 'button-container',
+            children: [
               {
                 tagName: 'button',
                 textContent: 'Surface Pro for Business vorbestellen',
               },
+            ],
+          },
+          {
+            tagName: 'div',
+            className: 'link-container',
+            children: [
               {
                 tagName: 'a',
                 href: '#',
@@ -240,8 +258,14 @@ const cardsTwoData = [
         className: 'card',
         children: [
           {
-            tagName: 'img',
-            src: 'assets/cardImg6.png',
+            tagName: 'div',
+            className: 'image-container',
+            children: [
+              {
+                tagName: 'img',
+                src: 'assets/cardImg6.png',
+              },
+            ],
           },
           {
             tagName: 'div',
@@ -254,8 +278,14 @@ const cardsTwoData = [
               {
                 tagName: 'p',
                 textContent:
-                  'Onlinebesprechungen, Chat, Zusammenarbeit in Echtzeit und gemeinsam genutzter Cloud-Speicher – alles an einem Ort.',
+                  'Onlinebesprechungen, Chat, Zusammenarbeit in Echtzeit und gemeinsam genutzter Cloud-Speicher – alles an einem Ort und alles von einem Partner.',
               },
+            ],
+          },
+          {
+            tagName: 'div',
+            className: 'button-container',
+            children: [
               {
                 tagName: 'button',
                 textContent: 'Jetzt vorbestellen',
@@ -269,8 +299,14 @@ const cardsTwoData = [
         className: 'card',
         children: [
           {
-            tagName: 'img',
-            src: 'assets/cardImg7.png',
+            tagName: 'div',
+            className: 'image-container',
+            children: [
+              {
+                tagName: 'img',
+                src: 'assets/cardImg7.png',
+              },
+            ],
           },
           {
             tagName: 'div',
@@ -283,8 +319,14 @@ const cardsTwoData = [
               {
                 tagName: 'p',
                 textContent:
-                  'Sparen Sie Zeit und konzentrieren Sie sich auf die Dinge, die am wichtigsten sind – mit KI in Microsoft 365 for Business.',
+                  'Sparen Sie Zeit und konzentrieren Sie sich auf die Dinge, die am wichtigsten sind und Ihnen am Herzen liegen – mit KI in Microsoft 365 for Business.',
               },
+            ],
+          },
+          {
+            tagName: 'div',
+            className: 'button-container',
+            children: [
               {
                 tagName: 'button',
                 textContent: 'Weitere Informationen',
@@ -298,8 +340,14 @@ const cardsTwoData = [
         className: 'card',
         children: [
           {
-            tagName: 'img',
-            src: 'assets/cardImg8.png',
+            tagName: 'div',
+            className: 'image-container',
+            children: [
+              {
+                tagName: 'img',
+                src: 'assets/cardImg8.png',
+              },
+            ],
           },
           {
             tagName: 'div',
@@ -312,8 +360,14 @@ const cardsTwoData = [
               {
                 tagName: 'p',
                 textContent:
-                  'Profitieren Sie von der leistungsfähigsten IDE für .NET- und C++-Entwickler unter Windows, um Web-, Cloud-, Desktop- und mobile Anwendungen, Dienste und Spiele zu erstellen.',
+                  'Profitieren Sie von der leistungsfähigsten IDE für .NET- und C++-Entwickler unter Windows Anwendungen, Dienste zu erstellen.',
               },
+            ],
+          },
+          {
+            tagName: 'div',
+            className: 'button-container',
+            children: [
               {
                 tagName: 'button',
                 textContent: 'Visual Studio 2022 herunterladen',

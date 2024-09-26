@@ -1,6 +1,7 @@
 .slider-container {
   height: 620px;
   overflow: hidden;
+  overflow-x: hidden;
 }
 
 .slide {

@@ -34,6 +34,7 @@ img {
   flex-grow: 1;
   height: inherit;
   display: flex;
+  gap: 5px;
   flex-flow: column;
   align-items: flex-start;
   justify-content: space-between;
@@ -67,5 +68,25 @@ img {
   button {
     font-size: 1rem;
     font-weight: 400;
+  }
+}
+
+.link-container {
+  margin-top: -20px;
+  a {
+    text-decoration: none;
+    display: flex;
+    padding: 16px;
+    padding-top: 0;
+    align-items: center;
+    color: #0067b8;
+    font-weight: 600;
+
+    &::after {
+      font-family: 'Material Icons';
+      content: 'keyboard_arrow_right';
+      display: inline-block;
+      font-size: 25px;
+    }
   }
 }
