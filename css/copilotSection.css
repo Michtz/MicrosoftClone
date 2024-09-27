@@ -1,13 +1,12 @@
 .copilot-container {
-  width: 90%;
+  position: relative;
   height: 510px;
   display: flex;
   align-items: center;
   margin: auto;
   margin-top: 5.7rem;
-
-  background-size: cover;
-  position: relative;
+  width: 90%;
+  max-width: 1350px;
 
   img {
     width: 100%;
@@ -17,8 +16,6 @@
   }
 
   div {
-    display: flex;
-    flex-direction: column;
     height: fit-content;
     width: 23%;
     z-index: 9;
