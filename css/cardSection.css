@@ -90,3 +90,32 @@ img {
     }
   }
 }
+
+/* Mobile */
+
+@media (max-width: 1080px) {
+  .card-container {
+    flex-wrap: wrap;
+    width: 99%;
+    gap: 3rem 1.5rem;
+    .card {
+      width: 100%;
+      flex-basis: 47.5%;
+      box-sizing: border-box;
+      div {
+        width: 100%;
+      }
+      .button-container {
+        justify-content: flex-start;
+      }
+    }
+  }
+}
+
+@media (max-width: 530px) {
+  .card-container {
+    .card {
+      flex-basis: 97%;
+    }
+  }
+}
