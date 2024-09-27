@@ -11,7 +11,8 @@ const footerData = [
             children: [
               {
                 tagName: 'li',
-                className: 'section',
+                className: 'footer-section-container',
+
                 children: [
                   {
                     tagName: 'span',
@@ -90,7 +91,8 @@ const footerData = [
               },
               {
                 tagName: 'li',
-                className: 'section',
+                className: 'footer-section-container',
+
                 children: [
                   {
                     tagName: 'span',
@@ -161,7 +163,8 @@ const footerData = [
               },
               {
                 tagName: 'li',
-                className: 'section',
+                className: 'footer-section-container',
+
                 children: [
                   {
                     tagName: 'span',
@@ -241,7 +244,8 @@ const footerData = [
               },
               {
                 tagName: 'li',
-                className: 'section',
+                className: 'footer-section-container',
+
                 children: [
                   {
                     tagName: 'span',
@@ -320,7 +324,8 @@ const footerData = [
               },
               {
                 tagName: 'li',
-                className: 'section',
+                className: 'footer-section-container',
+
                 children: [
                   {
                     tagName: 'span',
@@ -399,7 +404,8 @@ const footerData = [
               },
               {
                 tagName: 'li',
-                className: 'section',
+                className: 'footer-section-container',
+
                 children: [
                   {
                     tagName: 'span',

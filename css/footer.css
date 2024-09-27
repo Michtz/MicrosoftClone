@@ -3,13 +3,17 @@ footer {
 
   .footer-container {
     display: flex;
-    width: 95%;
+    padding: 0;
     margin: 2.5%;
 
-    li {
+    .footer-section-container {
       width: 16.6666666667%;
       margin: 0;
+      margin-top: 36px;
       padding: 0;
+      padding-left: 2rem;
+      list-style: none;
+
       span {
         font-size: 15px;
         font-weight: 600;
@@ -18,17 +22,24 @@ footer {
         margin: 0;
         padding: 36px 0 4px 0;
       }
+
       ul {
         margin: 0;
-        padding: 0;
+        padding: 8px 0;
+
         li {
+          padding: 8px 0;
+          list-style: none;
+
           a {
+            display: block;
             color: #616161;
             font-size: 11px;
             line-height: 16px;
-            padding: 8px 0;
+            text-decoration: none;
             word-break: break-word;
-            white-space: nowrap;
+            white-space: normal;
+            width: 100%;
           }
         }
       }
