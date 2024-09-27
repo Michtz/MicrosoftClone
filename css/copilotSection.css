@@ -15,7 +15,7 @@
     position: absolute;
   }
 
-  div {
+  .copilot-content {
     height: fit-content;
     width: 23%;
     z-index: 9;
@@ -31,6 +31,47 @@
     button {
       font-weight: 600;
       font-size: 1rem;
+    }
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 1080px) {
+  .copilot-container {
+    margin: 0 12px 14rem 12px;
+    width: calc(100% - 24px);
+
+    .copilot-content {
+      width: 100%;
+      background-color: white;
+      padding: 48px;
+      margin: auto 10px -10rem 10px;
+      box-shadow:
+        0 0.1875rem 0.4375rem 0 rgba(0, 0, 0, 0.13),
+        0 0.0625rem 0.125rem 0 rgba(0, 0, 0, 0.11);
+    }
+  }
+}
+
+@media (max-width: 860px) {
+  .copilot-container {
+    flex-flow: column;
+    margin: 3rem 0 15rem 0;
+    width: 100%;
+
+    height: 310px;
+    img{
+      position: relative;
+      max-width: 97.5%;
+    }
+    .copilot-content {
+      width: 95%;
+      margin:  0;
+      padding: 24px;
+      box-shadow:
+        0 0 0 0 rgba(0, 0, 0, 0) !important;,
+        0 0 0 0 rgba(0, 0, 0, 0) !important;
     }
   }
 }

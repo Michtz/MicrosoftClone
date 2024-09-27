@@ -9,6 +9,7 @@ const copilotData = [
       },
       {
         tagName: 'div',
+        className: 'copilot-content',
         children: [
           {
             tagName: 'h2',

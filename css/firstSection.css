@@ -206,3 +206,8 @@
   border: none;
   background: none;
 }
+
+/* Mobile */
+
+@media (max-width: 1080px) {
+}
