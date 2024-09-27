@@ -46,3 +46,21 @@ footer {
     }
   }
 }
+
+@media (max-width: 1080px) {
+  .footer-container {
+    flex-wrap: wrap;
+    .footer-section-container {
+      flex-basis: 27%;
+    }
+  }
+}
+
+@media (max-width: 530px) {
+  .footer-container {
+    flex-flow: column;
+    .footer-section-container {
+      width: 100% !important;
+    }
+  }
+}
