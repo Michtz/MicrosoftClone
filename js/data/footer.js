@@ -8,44 +8,50 @@ const footerData = [
         textContent: 'Microsoft folgen ',
       },
       {
-        tagName: 'a',
-        href: 'https://www.facebook.com/MicrosoftSchweiz',
-        children: {
-          tagName: 'img',
-          src: 'assets/social/facebookIcon.avif',
-        },
-      },
-      {
-        tagName: 'a',
-        href: 'https://twitter.com/microsoft_ch',
-        children: {
-          tagName: 'img',
-          src: 'assets/social/twittergIcon.avif',
-        },
-      },
-      {
-        tagName: 'a',
-        href: 'https://www.linkedin.com/company/1035',
-        children: {
-          tagName: 'img',
-          src: 'assets/social/linkdinIcon.avif',
-        },
-      },
-      {
-        tagName: 'a',
-        href: 'https://www.youtube.com/user/MicrosoftCH',
-        children: {
-          tagName: 'img',
-          src: 'assets/social/youtubeIcon.webp',
-        },
-      },
-      {
-        tagName: 'a',
-        href: 'https://www.instagram.com/microsoftch/',
-        children: {
-          tagName: 'img',
-          src: 'assets/social/instaIcon.webp',
-        },
+        tagName: 'div',
+        className: 'social-icons',
+        children: [
+          {
+            tagName: 'a',
+            href: 'https://www.facebook.com/MicrosoftSchweiz',
+            children: {
+              tagName: 'img',
+              src: 'assets/social/facebookIcon.avif',
+            },
+          },
+          {
+            tagName: 'a',
+            href: 'https://twitter.com/microsoft_ch',
+            children: {
+              tagName: 'img',
+              src: 'assets/social/twittergIcon.avif',
+            },
+          },
+          {
+            tagName: 'a',
+            href: 'https://www.linkedin.com/company/1035',
+            children: {
+              tagName: 'img',
+              src: 'assets/social/linkdinIcon.avif',
+            },
+          },
+          {
+            tagName: 'a',
+            href: 'https://www.youtube.com/user/MicrosoftCH',
+            children: {
+              tagName: 'img',
+              src: 'assets/social/youtubeIcon.webp',
+            },
+          },
+          {
+            tagName: 'a',
+            href: 'https://www.instagram.com/microsoftch/',
+            children: {
+              tagName: 'img',
+              src: 'assets/social/instaIcon.webp',
+            },
+          },
+        ],
       },
     ],
   },
@@ -515,6 +521,7 @@ const footerData = [
         children: [
           {
             tagName: 'span',
+            className: 'legal-container',
             children: [
               {
                 tagName: 'a',
