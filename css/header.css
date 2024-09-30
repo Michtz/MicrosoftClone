@@ -24,6 +24,10 @@ header {
     display: flex;
   }
 
+  .mobile-nav-container {
+    display: none;
+  }
+
   .nav-items-container {
     display: flex;
     flex-wrap: wrap;
@@ -205,5 +209,57 @@ header {
   header {
     padding-left: 24px;
     padding-right: 24px;
+  }
+}
+
+@media (max-width: 860px) {
+  header {
+    justify-content: space-between;
+  }
+
+  .logo-text {
+    position: absolute;
+    left: 41%;
+  }
+
+  #all-from-microsoft,
+  #desktop-search,
+  .nav-items-container,
+  .more-button {
+    display: none !important;
+  }
+
+  .mobile-nav-container {
+    display: flex !important;
+  }
+
+  .hamburger-menu-mobile::after {
+    font-family: 'Material Icons';
+    font-size: 26px;
+    content: 'menu';
+    margin-right: 20px;
+  }
+
+  .search-mobile {
+    display: inline-block;
+    margin-top: 2px;
+  }
+  .search-mobile::after {
+    font-family: 'Material Icons';
+    font-size: 23px;
+    content: 'search';
+    display: inline-block;
+    transform: scaleX(-1);
+  }
+}
+
+@media (max-width: 530px) {
+  .logo-text {
+    left: 38%;
+  }
+}
+@media (max-width: 460px) {
+  .logo-text {
+    left: 36%;
   }
 }

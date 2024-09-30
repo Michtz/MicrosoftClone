@@ -363,7 +363,22 @@ const navDropdownData = [
 
 const navItemsData = [
   {
+    tagName: 'div',
+    className: 'mobile-nav-container',
+    children: [
+      {
+        tagName: 'span',
+        className: 'hamburger-menu-mobile',
+      },
+      {
+        tagName: 'span',
+        className: 'search-mobile',
+      },
+    ],
+  },
+  {
     tagName: 'a',
+    className: 'logo-text',
     href: 'https://www.microsoft.com/de-ch',
     children: [
       {
@@ -476,11 +491,13 @@ const additionalNavItemsData = [
         tagName: 'span',
         onclick: 'showDropdown()',
         className: 'additional-nav-item',
+        id: 'all-from-microsoft',
         textContent: 'Alles von Microsoft',
       },
       {
         tagName: 'span',
         onclick: 'openSearch()',
+        id: 'desktop-search',
         className: 'additional-nav-item',
         children: [
           {
