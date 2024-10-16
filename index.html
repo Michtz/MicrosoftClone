@@ -11,7 +11,6 @@
     <script src="./js/data/copilotSectionData.js" defer></script>
     <script src="./js/data/secondCardSectionData.js" defer></script>
     <script src="./js/data/footer.js" defer></script>
-
     <script src="./js/common.js" defer></script>
 
     <script src="./js/sliderLogic.js" defer></script>
@@ -35,8 +34,18 @@
   </head>
 
   <body>
-    <header></header>
+    <header id="top"></header>
     <main></main>
+    <a class="top-button" href="#top">Nach Oben</a>
+    <!-- easier to add the Top button here, than adding a new data.js file only for the button... -->
     <footer></footer>
   </body>
+  <script>
+    window.addEventListener('scroll', () => {
+      const scrollY = document.documentElement.scrollTop;
+      if (scrollY > 620)
+        document.querySelector('.top-button').style.opacity = '1';
+      else document.querySelector('.top-button').style.opacity = '0';
+    });
+  </script>
 </html>

@@ -378,6 +378,7 @@ const navItemsData = [
   },
   {
     tagName: 'a',
+    id: 'logo',
     className: 'logo-text',
     href: 'https://www.microsoft.com/de-ch',
     children: [

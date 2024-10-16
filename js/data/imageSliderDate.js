@@ -9,9 +9,21 @@ const sliderContentData = [
         className: 'defaultSlide',
         children: [
           {
-            tagName: 'img',
-            src: 'assets/microsoftSale.png',
+            tagName: 'picture',
+            children: [
+              {
+                tagName: 'source',
+                media: '(max-width: 1080px)',
+                srcset: 'assets/mobile/sliderImg1Mobile.png',
+                type: 'image/webp',
+              },
+              {
+                tagName: 'img',
+                src: 'assets/microsoftSale.png',
+              },
+            ],
           },
+
           {
             tagName: 'div',
             className: 'text-container-a',
@@ -44,9 +56,21 @@ const sliderContentData = [
         className: 'slide',
         children: [
           {
-            tagName: 'img',
-            src: 'assets/surfacePro.png',
+            tagName: 'picture',
+            children: [
+              {
+                tagName: 'source',
+                media: '(max-width: 1080px)',
+                srcset: 'assets/mobile/sliderImg2Mobile.png',
+                type: 'image/webp',
+              },
+              {
+                tagName: 'img',
+                src: 'assets/surfacePro.png',
+              },
+            ],
           },
+
           {
             tagName: 'div',
             className: 'text-container-b',

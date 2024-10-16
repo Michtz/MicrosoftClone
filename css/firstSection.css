@@ -1,8 +1,6 @@
 .slider-container {
   height: 720px;
   overflow-y: hidden;
-  /*  display: flex;
-  justify-content: center;*/
 }
 
 .defaultSlide,
@@ -11,10 +9,8 @@
   position: absolute;
   width: 100%;
   height: auto;
-  display: flex;
-  align-items: center;
 
-  img {
+  picture {
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -129,11 +125,13 @@
 }
 
 .text-container-a {
-  right: 38%;
+  left: 58%;
+  top: -297px;
 }
 
 .text-container-b {
-  right: 90%;
+  top: -310px;
+  padding-left: 6%;
 
   h1 {
     color: white;
@@ -211,21 +209,21 @@
 
 @media (max-width: 1080px) {
   .slider-container {
-    height: 650px;
+    height: 900px;
   }
   .defaultSlide,
   .slide {
     align-items: baseline;
     position: relative;
-    height: 82%;
+    height: 100%;
 
     .text-container-a,
     .text-container-b {
       margin: 20px 1%;
-      height: 24%;
+      height: 12%;
       background: white;
-      left: -100%;
-      top: 27px;
+      left: 0;
+      top: -60px;
       min-width: 90%;
       padding: 4%;
       border-radius: 0.125rem;
@@ -244,11 +242,14 @@
   }
 
   .controls {
-    top: 580px;
+    top: 830px;
   }
 
   .slide {
-    top: -82%;
+    top: -100%;
+    .text-container-b {
+      top: -80px;
+    }
     p,
     h1 {
       color: black;
@@ -258,13 +259,18 @@
 
 @media (max-width: 860px) {
   .slider-container {
-    height: 600px;
+    height: 730px;
   }
   .defaultSlide,
   .slide {
     height: 122%;
     .text-container-a,
     .text-container-b {
+      margin: 20px 0;
+      height: 15%;
+    }
+    .text-container-b {
+      top: -87px;
     }
   }
   .slide {
@@ -272,25 +278,55 @@
   }
 
   .controls {
-    top: 525px;
+    top: 720px;
   }
 }
 
 @media (max-width: 680px) {
+  .slider-container {
+    height: 630px;
+  }
+  .defaultSlide,
+  .slide {
+    .text-container-a,
+    .text-container-b {
+      height: 18%;
+    }
+  }
+
   .controls {
-    top: 470px;
+    top: 590px;
+  }
+}
+
+@media (max-width: 520px) {
+  .slider-container {
+    height: 530px;
+  }
+
+  .defaultSlide,
+  .slide {
+    .text-container-a,
+    .text-container-b {
+      height: 21%;
+    }
+  }
+
+  .controls {
+    top: 510px;
   }
 }
 
 @media (max-width: 420px) {
   .slider-container {
-    height: 500px;
+    height: 530px;
   }
   .defaultSlide,
   .slide {
     height: 150%;
     .text-container-a,
     .text-container-b {
+      height: 22%;
     }
   }
   .slide {
