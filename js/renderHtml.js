@@ -38,3 +38,9 @@ const slideA = document.querySelector('.defaultSlide');
 const slideB = document.querySelector('.slide');
 
 startInterval(slideA, slideB);
+
+window.addEventListener('scroll', () => {
+  const scrollY = document.documentElement.scrollTop;
+  if (scrollY > 620) document.querySelector('.top-button').style.opacity = '1';
+  else document.querySelector('.top-button').style.opacity = '0';
+});
